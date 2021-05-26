@@ -1,4 +1,4 @@
-# mqtt_connect
+
 Things to do
 To make documents about the followings
 1. Setting UP MQTT server.
@@ -24,12 +24,13 @@ Setting fix IP address
 Docker compose setup
 Link: https://drive.google.com/file/d/1kYLdkN4jMBkiz3PL3uqxcd4nyZysgWJp/view?usp=sharing
 Steps
-• sudo apt update
-• curl -fsSL https://get.docker.com -o get-docker.sh
-• sudo sh get-docker.sh
-• sudo usermod -aG docker $USER
-• sudo apt install -y docker-compose
-• sudo reboot
+- sudo apt update
+- curl -fsSL https://get.docker.com -o get-docker.sh
+- sudo sh get-docker.sh
+- sudo usermod -aG docker $USER
+- sudo apt install -y docker-compose
+- sudo reboot
+
 Instaling Portainer in Docker
 - has to run docker compose file from (https://drive.google.com/file/d/1ARX4v6H1X91B0etEmMHgvrnGBc8BcQFA/view?usp=sharing)
 - copy the docker compose file to the raspberry pi and run

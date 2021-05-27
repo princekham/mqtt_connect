@@ -31,7 +31,7 @@ Steps
 - sudo apt install -y docker-compose
 - sudo reboot
 
-Instaling Portainer in Docker
+Instaling Portainer in Docker (docker cheat sheet at https://dockerlabs.collabnix.com/docker/cheatsheet/)
 - has to run docker compose file from (https://drive.google.com/file/d/1ARX4v6H1X91B0etEmMHgvrnGBc8BcQFA/view?usp=sharing)
 - copy the docker compose file to the raspberry pi (with WinSCP) and run (with Putty)
 - Connecting with WinSCP
@@ -43,4 +43,7 @@ Instaling Portainer in Docker
 - docker-compose up
 - Portainer runs on port 9000
 - username : admin ; password - 1q******
-- 
+- Next install Mosquito MQTT broker
+- copy the file to raspberry pi with WinSCP
+- run docker compose up
+- (Comments: Raspberry pi wifi got disconnected, has to reconnect wifi and it worked)

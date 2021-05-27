@@ -70,5 +70,10 @@ services:
         - ./volumes/nodered/data:/data
       environment:
         - TZ=Asia/Yangon
+        
+Tasks to do
+- compile arduino codes for esp8266 12F for MQTT 
+- one for relay driving 
+- and one for sensor data reading
 
 

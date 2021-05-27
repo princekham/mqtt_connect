@@ -48,3 +48,27 @@ Instaling Portainer in Docker (docker cheat sheet at https://dockerlabs.collabni
 - run docker compose up
 - tools should explore : MQTT Explorer, MQTT Clinet, MYMQTT (phone apks), 
 - (Comments: Raspberry pi wifi got disconnected, has to reconnect wifi and it worked)
+- Setting up NodeRED
+- copy the docker compose files and run docker compose up as before
+- Notes: Time zones needs to be set up when setting up NodeRED; otherwise it gives wrong system time
+- The docker compose file is as follow
+- 
+version: '2'
+
+services:
+
+  nodered:
+      container_name: nodered
+      build: ./setup/nodered/.
+      restart: unless-stopped
+      user: "0"
+      privileged: true
+      env_file: ./setup/nodered/nodered.env
+      ports:
+        - 1880:1880
+      volumes:
+        - ./volumes/nodered/data:/data
+      environment:
+        - TZ=Asia/Yangon
+
+

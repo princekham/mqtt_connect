@@ -38,6 +38,9 @@ Instaling Portainer in Docker
 - ip address - 192.168.1.165
 - Protocal - SCP
 - username - pi ; password - raspberry
+- Connecting with Putty
+- can login to raspberry pi with the same username and password
 - docker-compose up
 - Portainer runs on port 9000
+- username : admin ; password - 1q******
 - 

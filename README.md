@@ -46,4 +46,5 @@ Instaling Portainer in Docker (docker cheat sheet at https://dockerlabs.collabni
 - Next install Mosquito MQTT broker
 - copy the file to raspberry pi with WinSCP
 - run docker compose up
+- tools should explore : MQTT Explorer, MQTT Clinet, MYMQTT (phone apks), 
 - (Comments: Raspberry pi wifi got disconnected, has to reconnect wifi and it worked)

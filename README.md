@@ -33,7 +33,11 @@ Steps
 
 Instaling Portainer in Docker
 - has to run docker compose file from (https://drive.google.com/file/d/1ARX4v6H1X91B0etEmMHgvrnGBc8BcQFA/view?usp=sharing)
-- copy the docker compose file to the raspberry pi and run
+- copy the docker compose file to the raspberry pi (with WinSCP) and run (with Putty)
+- Connecting with WinSCP
+- ip address - 192.168.1.165
+- Protocal - SCP
+- username - pi ; password - raspberry
 - docker-compose up
 - Portainer runs on port 9000
 - 

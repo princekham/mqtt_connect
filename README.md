@@ -76,4 +76,7 @@ Tasks to do
 - one for relay driving (Finished - compiled codes at One_Relay)
 - and one for sensor data reading
 
+Installing InfluxDB
+- Notes : influxdb:1.8 only supported; so influxdb:latest needs to be changed to influxdb:1.8 in docker-compose file
+
 

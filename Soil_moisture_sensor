@@ -1,0 +1,6 @@
+// soil moisture sensor
+// one example for Arduino at https://www.circuitstoday.com/arduino-soil-moisture-sensor
+// that example shows soil moisture in %
+// input voltage for soil moisture sensor is 3.3 - 5 V
+// Basic codes form Instructable at https://www.electronicwings.com/nodemcu/soil-moisture-sensor-interfacing-with-nodemcu
+// That should work fine

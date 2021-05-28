@@ -79,4 +79,12 @@ Tasks to do
 Installing InfluxDB
 - Notes : influxdb:1.8 only supported; so influxdb:latest needs to be changed to influxdb:1.8 in docker-compose file
 
+Creating database at InfluxDB
+-Connect with InfluxDB client (bat file)
+-show databases
+- create database sensor_data
+- use sensor_data
+- show measurements
+- select * from temp_logs
+
 

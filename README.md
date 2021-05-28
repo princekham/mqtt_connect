@@ -73,7 +73,7 @@ services:
         
 Tasks to do
 - compile arduino codes for esp8266 12F for MQTT 
-- one for relay driving 
+- one for relay driving (Finished - compiled codes at One_Relay)
 - and one for sensor data reading
 
 

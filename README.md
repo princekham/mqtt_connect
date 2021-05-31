@@ -90,5 +90,9 @@ Creating database at InfluxDB
 I have problems with ADC on esp8266 12F and I am trying to flash new firmware but cannot find the firmware.
 I found that custom firmware can be build at https://nodemcu.readthedocs.io/en/release/build/ and https://nodemcu-build.com/
 I think I can view from this video on how to flach the firmware - https://www.youtube.com/watch?v=MHrm7axsImI
+I can use the following command to check the ID of esp8266
+C:\Users\saoky\AppData\Local\Programs\Python\Python39\Scripts>esptool.py --port COM8 --baud 115200 flash_id
+but to use this command I have to disconnect other tool like Esploer
+
 
 

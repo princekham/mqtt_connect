@@ -87,4 +87,8 @@ Creating database at InfluxDB
 - show measurements
 - select * from temp_logs
 
+I have problems with ADC on esp8266 12F and I am trying to flash new firmware but cannot find the firmware.
+I found that custom firmware can be build at https://nodemcu.readthedocs.io/en/release/build/ and https://nodemcu-build.com/
+I think I can view from this video on how to flach the firmware - https://www.youtube.com/watch?v=MHrm7axsImI
+
 

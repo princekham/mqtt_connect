@@ -94,5 +94,8 @@ I can use the following command to check the ID of esp8266
 C:\Users\saoky\AppData\Local\Programs\Python\Python39\Scripts>esptool.py --port COM8 --baud 115200 flash_id
 but to use this command I have to disconnect other tool like Esploer
 
+More to look on InfluxDB - Time Series, DB Client,
+
+Now we have to stream sensor data tothe influxDB - successful!
 
 

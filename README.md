@@ -98,4 +98,10 @@ More to look on InfluxDB - Time Series, DB Client,
 
 Now we have to stream sensor data tothe influxDB - successful!
 
+Grafana
+port: 3000
+enter own password
+admin admin
+change password to 1q******
+
 

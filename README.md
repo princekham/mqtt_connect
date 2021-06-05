@@ -104,4 +104,9 @@ enter own password
 admin admin
 change password to 1q******
 
+How to install Zerotier
+https://youtu.be/zADj0k0waFY
+
+
+
 

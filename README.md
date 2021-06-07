@@ -107,6 +107,20 @@ change password to 1q******
 How to install Zerotier
 https://youtu.be/zADj0k0waFY
 
+Node-RED function for turning timer on/off 
+
+var val = parseFloat(msg.payload)
+if(msg.payload>50)
+msg.payload="stop"
+
+return msg;
+
+Node-RED function for InfluxDB input
+
+var val = parseFloat(msg.payload)
+msg.payload = {sensor:"moisture_sensor",moisture_val:val}
+return msg;
+
 
 
 

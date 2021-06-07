@@ -11,9 +11,11 @@ const char* mqtt_server = "192.168.1.165";
 
 const int stateMessageEverySec = 5;
 
-#define SWITCH1 4
-const char* switch1ControlTopic = "esp8285/switch1/control";
-const char* switch1StateTopic = "esp8285/switch1/state";
+#define SWITCH1 15
+const char* switch1ControlTopic = "garden/switch2/control";
+const char* switch1StateTopic = "garden/switch2/state";
+
+#define LED 13
 /*
 #define SWITCH2 16
 const char* switch2ControlTopic = "esp8285/switch2/control";
@@ -51,7 +53,7 @@ void reconnectMQTT() {
     if (client.connect(clientId.c_str())) {
       Serial.println("connected");
       // Once connected, publish an announcement...
-      client.publish("esp8285/testOut", "hello world");
+      client.publish("garden/testOut", "hello world");
       // ... and resubscribe
       client.subscribe(switch1ControlTopic);
      // client.subscribe(switch2ControlTopic);
@@ -82,10 +84,12 @@ void processRelayCallback(const char* controlTopic, const char* stateTopic, int 
      if (strcmp(command, "ON") == 0) {
         Serial.println("ON");
         digitalWrite(relayCode, HIGH);
+        digitalWrite(relayCode-2, HIGH);
         publishRelayState(stateTopic, relayCode);
      } else if (strcmp(command, "OFF") == 0) {
         Serial.println("OFF");
         digitalWrite(relayCode, LOW);
+        digitalWrite(relayCode-2, LOW);
         publishRelayState(stateTopic, relayCode);
      } else {
          Serial.println("Unknown command");
@@ -108,11 +112,12 @@ void callback(char* topic, byte* payload, unsigned int length) {
 
 void setup() {
   pinMode(SWITCH1, OUTPUT); 
- // pinMode(SWITCH2, OUTPUT);
+  pinMode(LED, OUTPUT);
    
   Serial.begin(9600);
   
   setupWiFi();
+  WiFi.mode(WIFI_STA);
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
 
@@ -134,6 +139,3 @@ void loop() {
    // publishRelayState(switch2StateTopic, SWITCH2);
   }
 }
-
-Comments: I need to specificall tell esp8266 to run in station mode only by the following codes I think.
-WiFi.mode(WIFI_STA);

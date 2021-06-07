@@ -134,3 +134,6 @@ void loop() {
    // publishRelayState(switch2StateTopic, SWITCH2);
   }
 }
+
+Comments: I need to specificall tell esp8266 to run in station mode only by the following codes I think.
+WiFi.mode(WIFI_STA);

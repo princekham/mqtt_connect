@@ -122,6 +122,6 @@ msg.payload = {sensor:"moisture_sensor",moisture_val:val}
 return msg;
 
 
-
+changing passwd of Pi :4......Y
 
 

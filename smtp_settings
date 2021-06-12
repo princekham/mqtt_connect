@@ -1,0 +1,17 @@
+The following codes in grafana.ini is used to be able to send email from gmail.
+
+[smtp]
+enabled = true
+host = smtp.gmail.com:587
+user = **********@gmail.com
+# If the password contains # or ; you have to wrap it with trippel quotes. Ex "$
+password = ********
+;cert_file =
+;key_file =
+skip_verify = true
+
+However, you need to turn on "Less secure App Access" from google security.
+
+To go to grafana.ini, use the following:
+ docker exec -it 9a8f395114da /bin/bash
+ go to the base and nano etc/grafana/grafana.ini

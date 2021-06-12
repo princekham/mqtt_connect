@@ -125,5 +125,6 @@ return msg;
 changing passwd of Pi :4......Y
 
 Use the following command to get into Docker Grafana container 
+docker ps
 pi@raspberrypi:~ $ docker exec -it 9a8f395114da /bin/bash
 

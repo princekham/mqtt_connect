@@ -92,6 +92,11 @@ I found that custom firmware can be build at https://nodemcu.readthedocs.io/en/r
 I think I can view from this video on how to flach the firmware - https://www.youtube.com/watch?v=MHrm7axsImI
 I can use the following command to check the ID of esp8266
 C:\Users\saoky\AppData\Local\Programs\Python\Python39\Scripts>esptool.py --port COM8 --baud 115200 flash_id
+stepsin flashing
+C:\Users\saoky\AppData\Local\Programs\Python\Python39\Scripts>esptool.py --port COM8 --baud 115200 erase_flash
+C:\Users\saoky\AppData\Local\Programs\Python\Python39\Scripts>esptool.py --port COM8 --baud 115200 write_flash -fm dio -fs 32m 0x00000 blank4mb.bin
+
+
 but to use this command I have to disconnect other tool like Esploer
 
 More to look on InfluxDB - Time Series, DB Client,
